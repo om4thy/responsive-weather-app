@@ -36,7 +36,9 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
-        <title>weatherMadeSimple</title>
+      <Helmet>
+          <title>{ weatherMadeSimple }</title>
+        </Helmet>
         <div className="search-box">
           <input 
             type="text"
