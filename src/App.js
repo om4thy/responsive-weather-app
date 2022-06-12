@@ -4,6 +4,7 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
+
 function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
+        <title>weatherMadeSimple</title>
         <div className="search-box">
           <input 
             type="text"
